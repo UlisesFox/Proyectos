@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(35, 0, 83);
+    color: rgb(203, 132, 0);
+}
+
+h1{
+    color: rgb(35, 0, 83);
+    background-color: rgb(203, 132, 0);
+    text-decoration-line: underline;
+    font-size: xxx-large;
+    right: 50px;
+}
+
+.contenedor_formulario{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.contedor:last-child(){
+    margin-bottom: 20px;
+}
+
+label{
+    margin-bottom: 10px;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+}
+
+.select{
+    width: 100%;
+    text-align: center;
+    max-width: 200px;
+    height: 35px;
+}
+.contendor_boton{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.btn{
+    width: 100%;
+    max-width: 200px;
+    height: 30px;
+}
+
+.primario{
+    background-color: rgb(83, 0, 83);
+    color: rgb(203, 132, 0);
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.primario:hover{
+    cursor: pointer;
+    background-color: rgb(203, 132, 0);
+    color: rgb(83, 0, 83);
+}
+
+
+#baner{
+    margin-top: 0;
+    position: relative;
+}
+
+#baner img{
+    width: 100%;
+    height: 100%;
+}
+
+#baner h2{
+    font-size: 10px;
+    padding-top: 5em;
+}

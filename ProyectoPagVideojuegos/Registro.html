@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Registro.css">   
+    <title> Registro </title>
+</head>
+
+<body>
+    <div class="contenedor_formulario">
+    <h1> Creando registro </h1>
+    <section id="baner">
+        <img src="Imagenes/lolo.jpg" alt="">
+    </section>
+    <form action="main.php" method="POST">
+        <div class="contenedor">
+            <div class="column">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+            </div>
+        </div>
+        
+        <div class="contenedor">
+            <div class="column">
+                <label for="correo">Correo</label>
+                <input type="text" name="correo" id="correo" required="obligatorio" placeholder="Escribe tu correo">
+            </div>
+        </div>
+
+        <div class="contenedor">
+            <div class="column">
+                <label for="telefono">Teléfono</label>
+                <input type="text" name="telefono" id="telefono" required="obligatorio" placeholder="Escribe tu telefono">
+            </div>
+        </div>
+
+        <div class="contenedor">
+            <div class="column">
+                <label for="telefono">Contraseña</label>
+                <input type="text" name="contraseña" id="contraseña" required="obligatorio" placeholder="Escribe tu telefono">
+            </div>
+        </div>
+        
+        <div class="contendor_boton">
+            <button class="btn primario" type="submit" name="registra">  Registrar </button>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
