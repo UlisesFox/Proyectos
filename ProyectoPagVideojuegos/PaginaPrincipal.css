@@ -6,11 +6,10 @@
 
 .pagina{
     width: 98%;
-    margin: 5px 0;
 }
 
 .pagina img{
-    width: 30px;
+    width: 40px;
     margin: 0px;
 }
 
@@ -27,6 +26,7 @@ header{
 
 h1{
     float: left;
+    font-size: xxx-large;
 }
 
 header .pagina{
@@ -88,6 +88,8 @@ header label{
 
     .barra a{
         border: none;
+        font-size: xx-large;
+        text-decoration: underline;
     }
 
     header label{
