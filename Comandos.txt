@@ -1,0 +1,15 @@
+GitBash
+
+git add. (todo en la carpeta)
+
+git add "nombre de archivo" (subir solo ese archivo)
+
+git commit -m "asdasdsa" (comentar cambios)
+
+git push (mandar todo al Githud)
+
+git status (ver el estado de la carpeta)
+
+git diff (ver los cambios)
+
+git push origin main
