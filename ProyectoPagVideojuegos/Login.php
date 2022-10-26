@@ -12,7 +12,7 @@ $fila = mysqli_num_rows($consu);
 if($fila == mysqli_fetch_array($consu)){
     session_start();
     $_SESSION['correo'] = $correo;
-    header("location: PaginaPrincipal.html");
+    header("location: Tienda.html");
 }else{
     header("location: Login.html");
 }
