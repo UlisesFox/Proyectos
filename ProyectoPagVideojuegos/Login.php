@@ -9,7 +9,7 @@ $consu = mysqli_query($connect, "SELECT * FROM registro WHERE correo = '$correo'
 
 $fila = mysqli_num_rows($consu);
 
-if($fila == mysqli_fetch_array($consu)){
+if($consu){
     session_start();
     $_SESSION['correo'] = $correo;
     header("location: Tienda.html");

@@ -12,11 +12,9 @@ $inser = "INSERT INTO registro (id, nombre, correo, telefono, contrasenia) value
 $con = mysqli_query($connect, $inser);
 
 if ($con){
-    echo "Conectado... ";
     header('location: Login.html');
 }else{
     header('location: Registro.html');
-    echo "Error... ";
 
 }
 
