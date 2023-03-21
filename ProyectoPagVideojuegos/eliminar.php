@@ -10,7 +10,7 @@ include 'Conexion.php';
 	<link rel="stylesheet" href="superior.css">
 	<link rel="stylesheet" href="BarraDesplegable.css">
 	<link rel="icon" href="./Imagenes/Logo.png" type="image/x-con">
-	<title>Datos guardados</title>
+	<title>Eliminar</title>
 </head>
 <body>
 
@@ -22,17 +22,17 @@ include 'Conexion.php';
             <label class="icon-menu" for="menubarra"></label>
             <nav class="barra">
 				<a href="Admin.html">Admin</a>
-                <a href="#">Mostra datos</a>
+                <a href="Mostrar.php">Mostra datos</a>
                 <a href="RegistroProducto.html">Registro</a>
                 <a href="buscar.php">Buscar</a>
                 <a href="editar.php">Modificar</a>
-                <a href="eliminar.php">Eliminar</a>
+                <a href="#">Eliminar</a>
             </nav>
         </div>
     </header>
 
 	<br>
-	<h2 style="margin-bottom: 10px; font-size: 40px; text-align: center;">Usuarios</h2>
+	<h2 style="margin-bottom: 10px; font-size: 40px; text-align: center;"">Usuarios</h2>
 		<table border="1" style="margin: auto;">
 			<tr>
 				<td>ID</td>
@@ -41,6 +41,7 @@ include 'Conexion.php';
 				<td>Telefono</td>
 				<td>Contraseña</td>
 				<td>Tipo</td>
+                <td>Eliminar</td>
 			</tr>
 
 			<?php
@@ -57,6 +58,7 @@ include 'Conexion.php';
 				<td><?php echo $mostrar['telefono'] ?></td>
 				<td><?php echo $mostrar['contrasenia'] ?></td>
 				<td><?php echo $mostrar['Tipo'] ?></td>
+                <td><a href="ss_eliminar.php? id=<?php echo $mostrar['0'] ?>" style="color: orange;">Eliminar</a></td>
 			</tr>
 
 			<?php
@@ -75,12 +77,12 @@ include 'Conexion.php';
 				<td>Descripccion</td>
 				<td>Estado</td>
 				<td>Imagen</td>
+                <td>Eliminar</td>
 			</tr>
 
 			<?php
 			$sql="SELECT * from producto";
 			$result=mysqli_query($connect, $sql);
-
 			while($mostrar=mysqli_fetch_array($result)){
 			?>
 
@@ -91,11 +93,14 @@ include 'Conexion.php';
 				<td><?php echo $mostrar['fecha'] ?></td>
 				<td><?php echo $mostrar['descripccion'] ?></td>
 				<td><?php echo $mostrar['estado'] ?></td>
-				<td></td>
+                <td></td>
+				<td><a href="sp_eliminar.php? id=<?php echo $mostrar['0'] ?>" style="color: orange;">Eliminar</a></td>
 			</tr>
+
 			<?php
 			}
 			?>
+
 		</table>
 	</br>
 </body>

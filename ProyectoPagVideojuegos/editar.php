@@ -10,7 +10,7 @@ include 'Conexion.php';
 	<link rel="stylesheet" href="superior.css">
 	<link rel="stylesheet" href="BarraDesplegable.css">
 	<link rel="icon" href="./Imagenes/Logo.png" type="image/x-con">
-	<title>Datos guardados</title>
+	<title>Editar</title>
 </head>
 <body>
 
@@ -22,17 +22,17 @@ include 'Conexion.php';
             <label class="icon-menu" for="menubarra"></label>
             <nav class="barra">
 				<a href="Admin.html">Admin</a>
-                <a href="#">Mostra datos</a>
+                <a href="Mostrar.php">Mostra datos</a>
                 <a href="RegistroProducto.html">Registro</a>
                 <a href="buscar.php">Buscar</a>
-                <a href="editar.php">Modificar</a>
+                <a href="#">Modificar</a>
                 <a href="eliminar.php">Eliminar</a>
             </nav>
         </div>
     </header>
 
 	<br>
-	<h2 style="margin-bottom: 10px; font-size: 40px; text-align: center;">Usuarios</h2>
+	<h2 style="margin-bottom: 10px; font-size: 40px; text-align: center;"">Usuarios</h2>
 		<table border="1" style="margin: auto;">
 			<tr>
 				<td>ID</td>
@@ -41,6 +41,7 @@ include 'Conexion.php';
 				<td>Telefono</td>
 				<td>Contraseña</td>
 				<td>Tipo</td>
+                <td>Editar</td>
 			</tr>
 
 			<?php
@@ -57,6 +58,14 @@ include 'Conexion.php';
 				<td><?php echo $mostrar['telefono'] ?></td>
 				<td><?php echo $mostrar['contrasenia'] ?></td>
 				<td><?php echo $mostrar['Tipo'] ?></td>
+				<td><a href="editarU.php?
+                id=<?php echo $mostrar['0']?> &
+                nombre=<?php echo $mostrar['1']?> &
+                correo=<?php echo $mostrar['2']?> &
+                telefono=<?php echo $mostrar['3']?> &
+                contrasenia=<?php echo $mostrar['4']?> &
+                Tipo=<?php echo $mostrar['5']?>" 
+                style="color: orange;">Editar</a></td>
 			</tr>
 
 			<?php
@@ -75,6 +84,7 @@ include 'Conexion.php';
 				<td>Descripccion</td>
 				<td>Estado</td>
 				<td>Imagen</td>
+                <td>Editar</td>
 			</tr>
 
 			<?php
@@ -91,11 +101,21 @@ include 'Conexion.php';
 				<td><?php echo $mostrar['fecha'] ?></td>
 				<td><?php echo $mostrar['descripccion'] ?></td>
 				<td><?php echo $mostrar['estado'] ?></td>
-				<td></td>
+                <td></td>
+				<td><a href="editarP.php?
+                nombreP=<?php echo $mostrar['0']?> &
+                id=<?php echo $mostrar['1']?> &
+                precio=<?php echo $mostrar['2']?> &
+                fecha=<?php echo $mostrar['3']?> &
+                descripccion=<?php echo $mostrar['4']?> &
+                estado=<?php echo $mostrar['5']?>" 
+                style="color: orange;">Editar</a></td>
 			</tr>
+
 			<?php
 			}
 			?>
+
 		</table>
 	</br>
 </body>
