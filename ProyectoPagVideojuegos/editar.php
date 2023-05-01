@@ -27,6 +27,7 @@ include 'Conexion.php';
                 <a href="buscar.php">Buscar</a>
                 <a href="#">Modificar</a>
                 <a href="eliminar.php">Eliminar</a>
+				<a href="TiendaA.html">Regresar</a>
             </nav>
         </div>
     </header>

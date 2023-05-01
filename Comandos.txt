@@ -1,6 +1,6 @@
 GitBash
 
-git add. (todo en la carpeta)
+git add . (todo en la carpeta)
 
 git add "nombre de archivo" (subir solo ese archivo)
 

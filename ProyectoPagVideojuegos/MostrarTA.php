@@ -21,50 +21,15 @@ include 'Conexion.php';
             <input type="checkbox" id="menubarra">
             <label class="icon-menu" for="menubarra"></label>
             <nav class="barra">
+                <a href="TiendaA.html">Tienda</a>
 				<a href="Admin.html">Admin</a>
-                <a href="#">Mostra datos</a>
-                <a href="RegistroProducto.html">Registro</a>
-                <a href="buscar.php">Buscar</a>
-                <a href="editar.php">Modificar</a>
-                <a href="eliminar.php">Eliminar</a>
-				<a href="TiendaA.html">Regresar</a>
+                <a href="buscarTA.php">Buscar</a>
+                <a href="#">Mostrar</a>
+                <a href="ProductoA.php">Productos</a>
+				<a href="index.php">Cerrar sesion</a>
             </nav>
         </div>
     </header>
-
-	<br>
-	<h2 style="margin-bottom: 10px; font-size: 40px; text-align: center;">Usuarios</h2>
-		<table border="1" style="margin: auto;">
-			<tr>
-				<td>ID</td>
-				<td>Nombre</td>
-				<td>Correo</td>
-				<td>Telefono</td>
-				<td>Contraseña</td>
-				<td>Tipo</td>
-			</tr>
-
-			<?php
-			$sql="SELECT * from registro";
-			$result=mysqli_query($connect, $sql);
-
-			while($mostrar=mysqli_fetch_array($result)){
-			?>
-
-			<tr>
-				<td><?php echo $mostrar['id'] ?></td>
-				<td><?php echo $mostrar['nombre'] ?></td>
-				<td><?php echo $mostrar['correo'] ?></td>
-				<td><?php echo $mostrar['telefono'] ?></td>
-				<td><?php echo $mostrar['contrasenia'] ?></td>
-				<td><?php echo $mostrar['Tipo'] ?></td>
-			</tr>
-
-			<?php
-			}
-			?>
-
-		</table>
 		
 		<h2 style="margin-top: 10px; margin-bottom: 10px; font-size: 40px; text-align: center;">Productos</h2>
 		<table border="1" style="margin: auto;">
