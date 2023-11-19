@@ -33,7 +33,7 @@
 
         <?php
             include("Conexion.php");
-            $sql = mysqli_query($connect, "SELECT * FROM producto");
+            $sql = mysqli_query($connect, "SELECT * FROM Producto");
             while($row = mysqli_fetch_array($sql)){
         ?>
 

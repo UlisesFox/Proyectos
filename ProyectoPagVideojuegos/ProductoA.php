@@ -35,7 +35,7 @@
 
         <?php
             include("Conexion.php");
-            $sql = mysqli_query($connect, "SELECT * FROM producto");
+            $sql = mysqli_query($connect, "SELECT * FROM Producto");
             while($row = mysqli_fetch_array($sql)){
         ?>
 
@@ -53,7 +53,7 @@
             <p>Estado: <?php echo $row['estado']?></p>
             <p> Precio: <?php echo $row['precio']?></p>
             <p>Descripccion: <?php echo $row['descripccion']?></p>
-            <form action="carrito.php" method="get">
+            <form action="carritoA.php" method="get">
             <button type="submit" name="carrito" value="<?php echo $row['id']?>">Agregar</button>
             </form>
         </div>
